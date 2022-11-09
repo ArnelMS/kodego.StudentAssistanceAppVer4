@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentProfileActivity">
+
+    <ImageView
+        android:id="@+id/imgCoverPhoto2"
+        android:layout_width="800dp"
+        android:layout_height="346dp"
+        android:scaleType="fitXY"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/imgProfilePhoto2"
+        android:layout_width="152dp"
+        android:layout_height="149dp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="376dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/etStudentSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <EditText
+        android:id="@+id/etStudentFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <EditText
+        android:id="@+id/etStudentBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Birthday"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <EditText
+        android:id="@+id/etStudentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Student Number"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <EditText
+        android:id="@+id/etStudentStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Status"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="798dp" />
+
+    <EditText
+        android:id="@+id/etStudentMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <EditText
+        android:id="@+id/etStudentYearLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Year / Level"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="691dp" />
+
+    <EditText
+        android:id="@+id/etStudentCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Course"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="745dp" />
+
+    <EditText
+        android:id="@+id/etStudentEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="632dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

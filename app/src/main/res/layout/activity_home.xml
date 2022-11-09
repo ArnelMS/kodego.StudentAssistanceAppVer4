@@ -10,8 +10,9 @@
 
     <ImageView
         android:id="@+id/imgCoverPhoto"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="427dp"
+        android:layout_height="220dp"
+        android:outlineProvider="paddedBounds"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -36,7 +37,8 @@
         android:layout_width="152dp"
         android:layout_height="149dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="164dp"
+        android:outlineProvider="paddedBounds"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imgCoverPhoto"
         tools:srcCompat="@tools:sample/avatars" />
@@ -81,10 +83,10 @@
         android:id="@+id/recylerHome"
         android:layout_width="414dp"
         android:layout_height="478dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:paddingStart="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.611"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgProfilePhoto" />
 
@@ -92,9 +94,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="8dp"
         android:text="Date Today and Time"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
-        tools:layout_editor_absoluteY="173dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imgCoverPhoto"
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto" />
 </androidx.constraintlayout.widget.ConstraintLayout>
