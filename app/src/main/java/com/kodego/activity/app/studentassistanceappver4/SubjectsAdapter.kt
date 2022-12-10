@@ -29,12 +29,9 @@ data class SubjectsAdapter (val subjects:List<Subjects>):RecyclerView.Adapter<Su
         holder.itemView.setOnClickListener(){
             onItemClick?.invoke(subjects[position])
         }
-
     }
 
     override fun getItemCount(): Int {
         return subjects.size
     }
-
-
 }
