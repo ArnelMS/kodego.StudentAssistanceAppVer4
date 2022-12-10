@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".HomeActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgCoverPhoto"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="fitXY"
@@ -24,50 +26,75 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="5dp"
         android:text="ARNEL MENDOZA SEBASTIAN"
+        android:textColor="#4E4E4E"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/imgCoverPhoto" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgProfilePhoto"
         android:layout_width="152dp"
         android:layout_height="149dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="132dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imgCoverPhoto"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvStudentNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="5dp"
         android:text="Student #: 20221105"
+        android:textColor="#404040"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
         app:layout_constraintTop_toBottomOf="@+id/tvStudentName" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvCourse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="5dp"
         android:text="BSBA - Business Management"
+        android:textColor="#404040"
         android:textSize="10sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentNumber" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvYearLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="5dp"
         android:text="Level: First Year"
+        android:textColor="#404040"
         android:textSize="10sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvCourse" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerHome"
+        android:layout_width="414dp"
+        android:layout_height="478dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfilePhoto" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:text="Date Today and Time"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
+        tools:layout_editor_absoluteY="173dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
