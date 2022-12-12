@@ -3,11 +3,16 @@ package com.kodego.activity.app.studentassistanceappver4
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import com.kodego.activity.app.studentassistanceappver4.databinding.ActivityMainBinding
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
+
     lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +27,7 @@ class MainActivity : AppCompatActivity() {
             var password: String = binding.etvPassword.text.toString()
             checkCredential(userName, password)
         }
+
     }
 
     //private fun checkCredential to be used within the class only...
@@ -39,8 +45,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, "Logging in...", Toast.LENGTH_SHORT).show()
             return true
 
-        } else if
-            ((correctUserName2 == "arnel") && (correctPassword2 == "12345")){
+        } else if ((correctUserName2 == "arnel") && (correctPassword2 == "12345")) {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
